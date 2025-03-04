@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(94, 94, 235);
+}
+
+.total {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.potager {
+    display: grid;
+    grid-template-columns: repeat(4, 70px);
+    grid-template-rows: repeat(7, 70px);
+    gap: 12px;
+    justify-content: center;
+    background-color: green;
+    padding: 1rem;
+    border-radius: 12px;
+}
+
+.champs {
+    background-color: rgb(110, 24, 24);
+    border-radius: 5px;
+    border: none;
+}
+
+img {
+    max-width: 100%;
+}
