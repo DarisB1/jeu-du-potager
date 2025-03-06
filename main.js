@@ -21,12 +21,14 @@ const currentColor = getComputedStyle(body).backgroundColor;
     
             btnChamp.style.backgroundColor = "rgb(110, 24, 24)";
         }else if (currentColor === "rgb(8, 8, 61)" && getComputedStyle(btnChamp).backgroundColor === "rgb(0, 0, 255)" && imgChamps.alt == "plant") {
-            if (imgChamps.alt === "plant") {
                 imgChamps.src = "./assets/tree.svg";  
                 imgChamps.alt = "tree"; 
                 btnChamp.style.backgroundColor = "rgb(110, 24, 24)";
+        }else if (currentColor === "rgb(8, 8, 61)" && getComputedStyle(btnChamp).backgroundColor === "rgb(0, 0, 255)" && imgChamps.alt == "tree") {
+                imgChamps.src = "./assets/forest.svg";  
+                imgChamps.alt = "forest"; 
+                btnChamp.style.backgroundColor = "rgb(110, 24, 24)";
                 btnChamp.disabled = true;
-            }
         }
     }
     
